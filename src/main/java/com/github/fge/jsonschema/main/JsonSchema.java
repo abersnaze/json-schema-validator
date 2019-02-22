@@ -122,4 +122,9 @@ public interface JsonSchema {
      * @return true if the instance is valid
      */
     boolean validInstanceUnchecked(JsonNode instance);
+
+    /**
+     * Extracts the default values defined in the schema
+     */
+    JsonNode extractDefault();
 }

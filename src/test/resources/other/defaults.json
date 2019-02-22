@@ -1,0 +1,117 @@
+[
+    {
+        "input": {
+            "type": "null",
+            "default": null
+        },
+        "output": null
+    },
+    {
+        "input": {
+            "type": "boolean",
+            "default": true
+        },
+        "output": true
+    },
+    {
+        "input": {
+            "type": "object",
+            "default": { "foo": "bar" }
+        },
+        "output": { "foo": "bar" }
+    },
+    {
+        "input": {
+            "type": "object",
+            "properties": {
+                "asdf": {
+                    "type": "number",
+                    "default": 12.34
+                }
+            }
+        },
+        "output": { "asdf": 12.34 }
+    },
+    {
+        "input": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "default": [ "asdf" ]
+        },
+        "output": [ "asdf" ]
+    },
+    {
+        "input": {
+            "type": "array",
+            "items": [
+                {
+                    "type": "string",
+                    "default": "asdf"
+                },
+                {
+                    "type": "number",
+                    "default": 12.34
+                }
+            ]
+        },
+        "output": [ "asdf", 12.34 ]
+    },
+    {
+        "input": {
+            "type": "array",
+            "items": {
+                "type": "string",
+                "minItems": 0
+            }
+        },
+        "output": [ ]
+    },
+    {
+        "input": {
+            "type": "array",
+            "items": {
+                "type": "string",
+                "default": "asdf",
+                "minItems": 1
+            }
+        },
+        "output": [ "asdf" ]
+    },
+    {
+        "input": {
+            "type": "number",
+            "default": 12.34
+        },
+        "output": 12.34
+    },
+    {
+        "input": {
+            "type": "string",
+            "default": "asdf"
+        },
+        "output": "asdf"
+    },
+    {
+        "input": {
+            "type": "integer",
+            "default": 1234
+        },
+        "output": 1234
+    },
+    {
+        "input": {
+            "type": [ "string", "number" ],
+            "default": "asdf"
+        },
+        "output": "asdf"
+    },
+    {
+        "input": {
+            "type": [ "string", "number" ],
+            "default": 12.34
+        },
+        "output": 12.34
+    }
+]
